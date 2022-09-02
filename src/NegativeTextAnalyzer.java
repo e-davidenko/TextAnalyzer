@@ -1,7 +1,8 @@
 public class NegativeTextAnalyzer implements TextAnalyzer {
     String text;
 
-    public NegativeTextAnalyzer(String test) {
+    public NegativeTextAnalyzer() {
+
     }
 
     public String NegativeTextAnalyzer(String test) {
