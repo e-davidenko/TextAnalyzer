@@ -1,10 +1,8 @@
-import jdk.jfr.Label;
-
 public class TooLongTextAnalyzer implements TextAnalyzer {
-    private int maxLenght;
+    private int maxLength;
 
-    public TooLongTextAnalyzer(int MaxLenght) {
-        this.maxLenght = maxLenght;
+    public TooLongTextAnalyzer(int maxLength) {
+        this.maxLength = this.maxLength;
     }
     @Override
     public String processText(String text) {

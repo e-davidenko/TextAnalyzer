@@ -66,7 +66,7 @@ public class Main {
         }
 
     private Label checkLabels(TextAnalyzer[] analyzers, String test) {
-
+            new NegativeTextAnalyzer(test);
             return Label.OK; //подставляет состояние теста
     }
 
