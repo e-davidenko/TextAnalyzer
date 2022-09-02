@@ -6,7 +6,7 @@ public class SpamAnalyzer implements TextAnalyzer{
     }
 
     @Override
-    public String processText(String text) {
+    public Label processText(String text) {
         return null;
     }
 }

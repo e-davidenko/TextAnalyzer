@@ -1,3 +1,3 @@
 public interface TextAnalyzer {
-    String processText(String text);
+    Label processText(String text);
 }

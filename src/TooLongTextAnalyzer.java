@@ -5,7 +5,10 @@ public class TooLongTextAnalyzer implements TextAnalyzer {
         this.maxLength = this.maxLength;
     }
     @Override
-    public String processText(String text) {
-        return text.toString();
+    public Label processText(String text) {
+        if (text.length() > maxLength) {
+            return Label.TOO_LONG;
+        }
+        return Label.OK;
     }
 }

@@ -1,19 +1,19 @@
-public class NegativeTextAnalyzer implements TextAnalyzer {
-    String text;
-
+public class NegativeTextAnalyzer extends KeyWordAnalyzer {
+    private String[] keywords;
+    private Label label;
     public NegativeTextAnalyzer() {
-
+        this.keywords = new String[3];
+        this.keywords[0] = ":(";
+        this.keywords[1] = "=(";
+        this.keywords[2] = ":|";
+        label = Label.NEGATIVE_TEXT;
     }
-
-    public String NegativeTextAnalyzer(String test) {
-        if (text.contains(this.text)) {
-            return "A";
-        } else return "B";
-    }
-
     @Override
-    public String processText(String text) {
-        return null;
+    protected String[] getKeywords() {
+        return keywords;
+    }
+    @Override
+    protected Label getLabel() {
+        return label;
     }
 }
-
